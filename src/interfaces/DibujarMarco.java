@@ -82,9 +82,9 @@ class LaminaConFiguras extends JPanel{
 		 instanciandola directamente  dentro de la clase
 		 */
 		
-		g2.draw(new Line2D.Double(100,100,325,250));
+		g2.draw(new Line2D.Double(100,100,250,250));
 		
-		//dibujar circulo centrado en rectangulo (revisar)
+		//dibujar circulo centrado en rectangulo 
 		
 		
 		double CentroEnX= rectangulo.getCenterX();	
@@ -100,5 +100,5 @@ class LaminaConFiguras extends JPanel{
 		g2.draw(circulo);
 		
 		
-	}
+	}//nuevo comentario
 }
