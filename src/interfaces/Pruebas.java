@@ -21,7 +21,7 @@ public class Pruebas {
 			
 			JFrame miVentana=new JFrame();
 		
-		//TAMA�O DE VENTANA:
+		//TAMAÑO DE VENTANA:
 
 		
 		miVentana.setSize(400, 250);
@@ -38,7 +38,7 @@ public class Pruebas {
 		
 		miVentana.setVisible(true);
 		
-		}
+		}// comentario añadido desde el repositorio de GitHub
 	}
 
 }
