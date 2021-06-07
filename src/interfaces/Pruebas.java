@@ -38,7 +38,7 @@ public class Pruebas {
 		
 		miVentana.setVisible(true);
 		
-		}// comentario añadido desde el repositorio de GitHub
+		}// comentario añadido desde el repositorio de GitHub.
 	}
 
 }
