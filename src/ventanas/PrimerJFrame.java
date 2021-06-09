@@ -7,18 +7,10 @@ import java.awt.*;
  */
 import javax.swing.*;
 
-/**
- * 
- * @author David
- *
- */
+
 
 public class PrimerJFrame {
 
-	/**
-	 * 
-	 * @param args
-	 */
 	public static void main(String[] args) {
 
 		
@@ -27,12 +19,7 @@ public class PrimerJFrame {
 	 	ventana.getDefaultCloseOperation();
 	}
 	
-	/**
-	 * 
-	 * @author David
-	 *
-	 */
-	
+
 public static class MiJFrame extends JFrame{
 		
 
