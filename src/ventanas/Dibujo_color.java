@@ -30,7 +30,7 @@ class MarcoConDibujos2 extends JFrame{
 	
 	public MarcoConDibujos2() {
 		
-		setTitle("Dibuja en marco");
+		setTitle("Colorea en marco");
 		
 		setSize(400,400);
 		
@@ -40,6 +40,11 @@ class MarcoConDibujos2 extends JFrame{
 		
 		add(lamina);
 		
+		/*
+		 * Establecemosel color al alamina
+		 */
+		
+		lamina.setBackground(Color.ORANGE);
 	}
 }
 
