@@ -10,7 +10,7 @@ public class Ventana {
 		
 				JFrame miVentana=new JFrame();
 				
-				//TAMAÑO DE VENTANA:
+				//TAMAÃ‘O DE VENTANA:
 				
 				miVentana.setSize(400, 250);
 				
@@ -28,3 +28,4 @@ public class Ventana {
 	}
 
 }
+//desde git
