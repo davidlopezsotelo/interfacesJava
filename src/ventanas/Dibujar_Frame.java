@@ -120,7 +120,7 @@ class LaminaConFiguras extends JPanel{
 		//establecemos el radio del circulo 
 		//igualamos el radio a la altura del rectangulo
 		
-		double radio =125;
+		double radio =100;
 		
 		Ellipse2D circulo=new Ellipse2D.Double();
 		
