@@ -51,7 +51,7 @@ class MarcoConTeclas extends JFrame{
 //CONSTRUIMOS EL OBJETO OYENTE------------------
 
 	/*
-	 * implementamos la Clase adaptadora KeyListener
+	 * implementamos la interfaz KeyListener
 	 * agregamos los metodos de la interfaz de forma automatica
 	 * 
 	 */
