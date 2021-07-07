@@ -36,13 +36,13 @@ class MarcoAccion extends JFrame{
 }
 
 /*
- * Creamos el panel con los botones 
+ * Creamos el panel con los botones -----------------------------------------------
  */
 
 class PanelAccion extends JPanel{
 
 	
-	public PanelAccion() {
+	public PanelAccion() {// constructor de la lamina o panel---------------------
 		
 		/*
 		 * instanciamos la clase accioncolor para crear
@@ -62,6 +62,41 @@ class PanelAccion extends JPanel{
 		add(new JButton(accionAmarillo));
 		add(new JButton(accionAzul));
 		add(new JButton(accionRojo));
+		
+		
+		/*
+		 * ahora construimos la acion por teclado
+		 */
+		
+		InputMap mapaEntrada=getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+		
+		/*
+		 * creamos la combinacion de teclas
+		 */
+		
+		KeyStroke teclaAmarilla=KeyStroke.getKeyStroke("ctrl A");
+		KeyStroke teclaAzul=KeyStroke.getKeyStroke("ctrl B");
+		KeyStroke teclaRoja=KeyStroke.getKeyStroke("ctrl R");
+		
+		/*
+		 * asignamos la combinacion de teclas a un objeto
+		 */
+		
+		mapaEntrada.put(teclaAmarilla, "fondo_amarillo");
+		mapaEntrada.put(teclaAzul, "fondo_azul");
+		mapaEntrada.put(teclaRoja, "fondo_rojo");
+		
+		
+		/*
+		 * asignamos el objeto a la accion
+		 */
+		
+		ActionMap mapaAccion=getActionMap();
+		
+		mapaAccion.put("fondo_amarillo", accionAmarillo);
+		mapaAccion.put("fondo_azul", accionAzul);
+		mapaAccion.put("fondo_rojo", accionRojo);
+		
 	}
 	
 	
@@ -77,11 +112,11 @@ class PanelAccion extends JPanel{
 		
 		/*
 		 * creamos el constructor de la clase
-		 * con los parametros que queramos añadir
+		 * con los parametros que queramos añadir--------------------
 		 * para guardar .
 		 */
 		
-		public AccionColor(String nombre,Icon icono,Color color_boton) {
+		public AccionColor(String nombre,Icon icono,Color color_boton) {//constructor
 			
 			//guardamos el nombre en formato de clave:valor
 			putValue(Action.NAME,nombre);
@@ -96,7 +131,7 @@ class PanelAccion extends JPanel{
 			putValue("Color_de_fondo",color_boton);
 		}
 
-		//accion que se debe realizar al pulsar un boton
+		//accion que se debe realizar al pulsar un boton--------
 		
 		@Override
 		public void actionPerformed(ActionEvent e) {
