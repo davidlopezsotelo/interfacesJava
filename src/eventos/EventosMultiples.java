@@ -151,7 +151,7 @@ class PanelAccion extends JPanel{
 			setBackground(c);	
 		}	
 	}
-}
+}//fin.
 
 
 
