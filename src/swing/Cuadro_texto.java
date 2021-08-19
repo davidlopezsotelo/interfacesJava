@@ -123,12 +123,22 @@ class LaminaTexto extends JPanel{
 				if(email.charAt(i)=='@') {
 					correcto++;
 				}
-				
+
 			}
 			
 			if(correcto!=1) {
 				
-				resultado.setText("incorrecto");
+				
+			for(int j=0;j<email.length();j++) {
+				if(email.charAt(j)=='.') {
+					resultado.setText("incorrecto");
+					
+				}
+				
+				
+			}
+				
+				
 				
 			}else {
 				resultado.setText("correcto");
