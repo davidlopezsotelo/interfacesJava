@@ -11,7 +11,7 @@ public class Procesador {
 		MenuProcesador mimarco=new MenuProcesador();
 		
 		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
+		//
 	}
 
 }
